@@ -1,0 +1,19 @@
+name: "COP30 Daily Brief"
+queries:
+  - "COP30 Belém 2025 announcements site:unfccc.int"
+  - "COP30 schedule Belém site:unfccc.int"
+  - "Belém climate summit November 2025 site:cop30.br"
+  - "COP30 news Reuters site:reuters.com"
+  - "COP30 press release AP site:apnews.com"
+  - "IPCC schedule COP30 site:ipcc.ch"
+sources:
+  - "https://unfccc.int/cop30"
+  - "https://unfccc.int/cop30/ifp"
+  - "https://cop30.br/en"
+  - "https://www.un.org/en/climatechange/cop30"
+  - "https://www.reuters.com/sustainability/cop/"
+  - "https://apnews.com/"
+  - "https://www.ipcc.ch/event/ipcc-at-cop30/"
+time_window_days: 3
+max_links: 25
+min_word_count: 120
