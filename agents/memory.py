@@ -8,6 +8,5 @@ class Memory:
         cur = self.db.execute("SELECT 1 FROM seen WHERE hash=?", (h,))
         return cur.fetchone() is not None
     def remember(self, docs):
-        self.db.executemany("INSERT OR IGNORE INTO seen(hash, url) VALUES(?,?)",
-                            [(d["hash"], d["url"]) for d in docs])
+        self.db.executemany("INSERT OR IGNORE INTO seen(hash, url) VALUES(?,?)", [(d["hash"], d["url"]) for d in docs])
         self.db.commit()
